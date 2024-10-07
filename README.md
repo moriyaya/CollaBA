@@ -30,9 +30,14 @@ python train.py
 python evaluate.py
 ```
 
-## Visual comparison
-![](./Figures/visual1.png)
-![](./Figures/visual2.png)
+## Visual comparison 
+<p align="center">
+    <img src="./Figures/visual1.png" alt="visual1" width="70%">
+</p>
+<p align="center">
+    <img src="./Figures/visual1.png" alt="visual2" width="70%">
+</p>
+
 
 ## Citation
 If you use this code or ideas from the paper for your research, please cite our paper:
