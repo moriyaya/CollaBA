@@ -31,7 +31,7 @@ python evaluate.py
 ```
 
 ## Visual comparison
-![](./visual.pdf)
+![](./Figures/pipeline.pdf)
 
 ## Citation
 If you use this code or ideas from the paper for your research, please cite our paper:
