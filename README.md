@@ -11,12 +11,10 @@ pip install -r requirements.txt
 
 ## Download the raw training and evaluation datasets
 ### Paired datasets 
-RELLISUR dataset: Andreas Aakerberg, Kamal Nasrollahi, Thomas Moeslund. "RELLISUR: A Real Low-Light Image Super-Resolution Dataset". NeurIPS Datasets and Benchmarks 2021. [UIEB](https://ieeexplore.ieee.org/document/8917818)
-
-DarkFace dataset: Jiang Hai, Zhu Xuan, Ren Yang, Yutong Hao, Fengzhu Zou, Fang Lin, and Songchen Han. "R2RNet: Low-light Image Enhancement via Real-low to Real-normal Network". Journal of Visual Communication and Image Representation, 2023. [[Baiduyun (extracted code: wmrr)]](https://pan.baidu.com/s/1XHWQAS0ZNrnCyZ-bq7MKvA)
+RELLISUR dataset: Andreas Aakerberg, Kamal Nasrollahi, Thomas Moeslund. "RELLISUR: A Real Low-Light Image Super-Resolution Dataset". NeurIPS Datasets and Benchmarks 2021. [RELLISUR](https://vap.aau.dk/rellisur/)
 
 ### Unpaired datasets 
-Please refer to [[Project Page of RetinexNet]](https://daooshee.github.io/BMVC2018website/).
+Please refer to DARK FACE dataset: Yang, Wenhan and Yuan, Ye and Ren, Wenqi and Liu, Jiaying and Scheirer, Walter J. and Wang, Zhangyang and Zhang, and et al. "DARK FACE: Face Detection in Low Light Condition". IEEE Transactions on Image Processing, 2020. [DARK FACE](https://flyywh.github.io/CVPRW2019LowLight/)
 
 ## Pre-trained Models 
 You can download our pre-trained model from [[Google Drive]](https://drive.google.com/drive/folders/1m3t15rWw76IDDWJ0exLOe5P0uEnjk3zl?usp=drive_link) and [[Baidu Yun (extracted code:cjzk)]](https://pan.baidu.com/s/1fPLVgnZbdY1n75Flq54bMQ)
@@ -38,15 +36,19 @@ python evaluate.py
 ## Citation
 If you use this code or ideas from the paper for your research, please cite our paper:
 ```
-@InProceedings{Jiang_2024_ECCV,
-    author    = {Jiang, Hai and Luo, Ao and Liu, Xiaohong and Han, Songchen and Liu, Shuaicheng},
-    title     = {LightenDiffusion: Unsupervised Low-Light Image Enhancement with Latent-Retinex Diffusion Models},
-    booktitle = {European Conference on Computer Vision},
-    year      = {2024},
-    pages     = {}
+@article{gao2024collaborative,
+  title={Collaborative brightening and amplification of low-light imagery via bi-level adversarial learning},
+  author={Gao, Jiaxin and Liu, Yaohua and Yue, Ziyu and Fan, Xin and Liu, Risheng},
+  journal={Pattern Recognition},
+  volume={154},
+  pages={110558},
+  year={2024},
+  publisher={Elsevier}
 }
 ```
 
 ## Acknowledgement
-Part of the code is adapted from previous works: [WeatherDiff](https://github.com/IGITUGraz/WeatherDiffusion) and [MIMO-UNet](https://github.com/chosj95/MIMO-UNet). We thank all the authors for their contributions.
+Part of the code is adapted from previous works: [SwinIR](https://github.com/JingyunLiang/SwinIR) and [Real-ESRGAN](https://github.com/xinntao/Real-ESRGAN) (code structure). We thank all the authors for their contributions.
+
+Please contact me if you have any questions at: jiaxinn.gao@outlook.com
 
