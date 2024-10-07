@@ -2,7 +2,7 @@
 By Jiaxin Gao, Yaohua Liu, Ziyu Yue, Risheng Liu, and Xin Fan
 
 ## Pipeline
-![](./Figures/pipeline.pdf)
+[Pipeline Diagram](./Figures/pipeline.pdf)
 
 ## Dependencies
 ```
