@@ -35,7 +35,7 @@ python evaluate.py
     <img src="./Figures/visual1.png" alt="visual1" width="70%">
 </p>
 <p align="center">
-    <img src="./Figures/visual1.png" alt="visual2" width="70%">
+    <img src="./Figures/visual2.png" alt="visual2" width="70%">
 </p>
 
 
