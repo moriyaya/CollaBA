@@ -31,7 +31,8 @@ python evaluate.py
 ```
 
 ## Visual comparison
-![](./Figures/visural1.png)
+![](./Figures/visual1.png)
+![](./Figures/visual2.png)
 
 ## Citation
 If you use this code or ideas from the paper for your research, please cite our paper:
