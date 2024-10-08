@@ -21,7 +21,7 @@ RELLISUR dataset: Andreas Aakerberg, Kamal Nasrollahi, Thomas Moeslund. "RELLISU
 Please refer to DARK FACE dataset: Yang, Wenhan and Yuan, Ye and Ren, Wenqi and Liu, Jiaying and Scheirer, Walter J. and Wang, Zhangyang and Zhang, and et al. "DARK FACE: Face Detection in Low Light Condition". IEEE Transactions on Image Processing, 2020. [DARK FACE](https://flyywh.github.io/CVPRW2019LowLight/)
 
 ## Pre-trained Models 
-You can download our pre-trained model from [Baidu Yun (extracted code: cjzk)](https://pan.baidu.com/s/1fPLVgnZbdY1n75Flq54bMQ) and place it in the directory `./experiments/pretrained_models/`.
+You can download our pre-trained model from [Baidu Yun (extracted code: oo89)](https://pan.baidu.com/s/1DIw94htO8kVD39XFx9SrVw) and place it in the directory `./experiments/pretrained_models/`.
 
 
 ## How to train?
