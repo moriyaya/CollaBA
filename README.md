@@ -10,7 +10,11 @@ By Jiaxin Gao, Yaohua Liu, Ziyu Yue, Risheng Liu, and Xin Fan
 
 ## Dependencies
 ```
+# Install basicsr - https://github.com/xinntao/BasicSR
+pip install basicsr
+pip install facexlib gfpgan
 pip install -r requirements.txt
+python setup.py develop
 ````
 
 ## Download the raw training and evaluation datasets
@@ -27,17 +31,13 @@ You can download our pre-trained model from [Baidu Yun (extracted code: oo89)](h
 ## How to train?
 The entire training process is divided into two stages. In the first stage, the generator is trained, and in the second stage, adversarial training is conducted. The weights of the trained generator from the first stage should be placed in `./experiments/pretrained_models/`.
 
-You need to modify ```datasets``` slightly for your environment, and then
+
 ```
-cd CollaBA
+cd CollaBA   
 CUDA_VISIBLE_DEVICES=0 python collabagan/train.py -opt options/train_collabagan_x2plus_ue_our.yml --auto_resume   # For x2 task
 CUDA_VISIBLE_DEVICES=0 python collabagan/train.py -opt options/train_collabagan_x4plus_ue_our.yml --auto_resume   # For x4 task
 ```
 
-## How to test?
-```
-python evaluate.py
-```
 
 ## Visual comparison 
 <p align="center">
@@ -63,7 +63,7 @@ If you use this code or ideas from the paper for your research, please cite our 
 ```
 
 ## Acknowledgement
-Part of the code is adapted from previous works: [SwinIR](https://github.com/JingyunLiang/SwinIR) and [Real-ESRGAN](https://github.com/xinntao/Real-ESRGAN) (code structure). We thank all the authors for their contributions.
+Part of the code is adapted from previous works: [BasicSR](https://github.com/xinntao/BasicSR) and [Real-ESRGAN](https://github.com/xinntao/Real-ESRGAN) (code structure). We thank all the authors for their contributions.
 
 Please contact me if you have any questions at: jiaxinn.gao@outlook.com
 
