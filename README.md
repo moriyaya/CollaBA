@@ -21,12 +21,17 @@ RELLISUR dataset: Andreas Aakerberg, Kamal Nasrollahi, Thomas Moeslund. "RELLISU
 Please refer to DARK FACE dataset: Yang, Wenhan and Yuan, Ye and Ren, Wenqi and Liu, Jiaying and Scheirer, Walter J. and Wang, Zhangyang and Zhang, and et al. "DARK FACE: Face Detection in Low Light Condition". IEEE Transactions on Image Processing, 2020. [DARK FACE](https://flyywh.github.io/CVPRW2019LowLight/)
 
 ## Pre-trained Models 
-You can download our pre-trained model from [[Google Drive]](https://drive.google.com/drive/folders/1m3t15rWw76IDDWJ0exLOe5P0uEnjk3zl?usp=drive_link) and [[Baidu Yun (extracted code:cjzk)]](https://pan.baidu.com/s/1fPLVgnZbdY1n75Flq54bMQ)
+You can download our pre-trained model from [Baidu Yun (extracted code: cjzk)](https://pan.baidu.com/s/1fPLVgnZbdY1n75Flq54bMQ) and place it in the directory `./experiments/pretrained_models/`.
+
 
 ## How to train?
-You need to modify ```datasets/dataset.py``` slightly for your environment, and then
+The entire training process is divided into two stages. In the first stage, the generator is trained, and in the second stage, adversarial training is conducted. The weights of the trained generator from the first stage should be placed in `./experiments/pretrained_models/`.
+
+You need to modify ```datasets``` slightly for your environment, and then
 ```
-python train.py  
+cd CollaBA
+CUDA_VISIBLE_DEVICES=0 python collabagan/train.py -opt options/train_collabagan_x2plus_ue_our.yml --auto_resume   # For x2 task
+CUDA_VISIBLE_DEVICES=0 python collabagan/train.py -opt options/train_collabagan_x4plus_ue_our.yml --auto_resume   # For x4 task
 ```
 
 ## How to test?
