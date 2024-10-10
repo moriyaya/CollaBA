@@ -1,6 +1,8 @@
 # [PR 2024] Collaborative brightening and amplification of low-light imagery via bi-level adversarial learning [[Paper]](https://www.sciencedirect.com/science/article/pii/S0031320324003091)
 By Jiaxin Gao, Yaohua Liu, Ziyu Yue, Risheng Liu, and Xin Fan
 
+Dalian University of Technology 
+
 ## Pipeline
 <p align="center">
     <img src="./Figures/pipeline.png" alt="Pipeline_Diagram" width="80%">
